@@ -102,7 +102,7 @@ flowchart TD
 
 ## 🧰 Tech Stack
 
-- Node.js
+- Node.js (>= 18.0.0)
 - TypeScript
 - Google Gen AI SDK (`@google/genai`)
 - Commander.js
@@ -115,7 +115,7 @@ flowchart TD
 ### Global
 
 ```bash
-npm install -g documind
+npm install -g @menaemad/documind
 ```
 
 ### Local
@@ -127,10 +127,16 @@ npm install
 npm run build
 ```
 
+Run in development mode:
+
+```bash
+npm run dev
+```
+
 Run locally:
 
 ```bash
-npx documind
+npx @menaemad/documind
 ```
 
 ## 🔧 Environment Variables
@@ -208,6 +214,7 @@ Built by **Mena Emad Sawares**.
 
 - Website: [https://menaemad.vercel.app/](https://menaemad.vercel.app/)
 - GitHub: [https://github.com/mena-emad](https://github.com/mena-emad)
+- Email: [menaemad6543@gmail.com](mailto:menaemad6543@gmail.com)
 
 ## 📜 License
 

@@ -1,5 +1,5 @@
 {
-  "name": "documind",
+  "name": "@menaemad/documind",
   "version": "1.0.0",
   "description": "AI-Powered Swagger/OpenAPI Documentation Generator for Express.js projects with intelligent context stitching.",
   "main": "dist/index.js",
