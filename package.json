@@ -1,9 +1,12 @@
 {
-  "name": "@menaemad/documind",
+  "name": "@mena-emad/documind",
   "version": "1.0.0",
   "description": "AI-Powered Swagger/OpenAPI Documentation Generator for Express.js projects with intelligent context stitching.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "bin": {
     "documind": "./dist/index.js"

@@ -115,7 +115,7 @@ flowchart TD
 ### Global
 
 ```bash
-npm install -g @menaemad/documind
+npm install -g @mena-emad/documind
 ```
 
 ### Local
@@ -136,7 +136,7 @@ npm run dev
 Run locally:
 
 ```bash
-npx @menaemad/documind
+npx @mena-emad/documind
 ```
 
 ## 🔧 Environment Variables
