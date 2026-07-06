@@ -1,7 +1,7 @@
 # DocuMind
 
 <p align="center">
-  <img src="./assets/Animation.gif" alt="DocuMind Demo" width="600px">
+  <img src="https://raw.githubusercontent.com/mena-emad/documind/main/assets/Animation.gif" alt="DocuMind Demo" width="600px">
 </p>
 <br>
 
