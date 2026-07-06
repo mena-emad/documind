@@ -1,6 +1,6 @@
 {
   "name": "@mena-emad/documind",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI-Powered Swagger/OpenAPI Documentation Generator for Express.js projects with intelligent context stitching.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,7 +35,7 @@
     "email": "menaemad6543@gmail.com",
     "github": "https://github.com/mena-emad"
   },
-  "license": "ISC",
+  "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
   },
