@@ -1,6 +1,6 @@
 # DocuMind
 
-[![npm version](https://img.shields.io/badge/npm-@menaemad%2Fdocumind-cc3534)](https://www.npmjs.com/package/@menaemad/documind) [![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/mena-emad/DocuMind) [![License](https://img.shields.io/badge/license-ISC-yellow)](./LICENSE) [![Language](https://img.shields.io/badge/language-TypeScript-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![npm version](https://img.shields.io/badge/npm-@menaemad%2Fdocumind-cc3534)](https://www.npmjs.com/package/@menaemad/documind) [![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/mena-emad/DocuMind) [![License](https://img.shields.io/badge/license-MIT-yellow)](./LICENSE) [![Language](https://img.shields.io/badge/language-TypeScript-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
 > AI-Powered Swagger/OpenAPI Documentation Generator for Express.js projects with intelligent context stitching.
 
@@ -218,4 +218,4 @@ Built by **Mena Emad Sawares**.
 
 ## 📜 License
 
-DocuMind is released under the **ISC License**.
+DocuMind is released under the **MIT License**.
