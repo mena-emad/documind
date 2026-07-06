@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022", /* أو ESNext، لكن ES2022 مستقرة جداً مع Node.js الحديث */
+    
+    "types": ["node"], 
+
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    "noUncheckedIndexedAccess": true, 
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+
+    /* 5. Recommended & Optimization Options */
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    
+  },
+  "include": ["src/**/*"]
+}

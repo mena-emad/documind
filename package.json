@@ -1,0 +1,51 @@
+{
+  "name": "documind",
+  "version": "1.0.0",
+  "description": "AI-Powered Swagger/OpenAPI Documentation Generator for Express.js projects with intelligent context stitching.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "documind": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "swagger",
+    "openapi",
+    "express",
+    "gemini",
+    "ai",
+    "automation",
+    "documentation"
+  ],
+  "author": {
+    "name": "Mena Emad Sawares",
+    "url": "https://menaemad.vercel.app/",
+    "email": "menaemad6543@gmail.com",
+    "github": "https://github.com/mena-emad"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "@google/genai": "^0.1.2",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7",
+    "ora": "^8.1.1",
+    "yaml": "^2.7.0"
+  }
+}
