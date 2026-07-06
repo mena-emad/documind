@@ -4,17 +4,25 @@ import * as path from 'path';
 
 dotenv.config({ path: path.resolve(process.cwd(), '.env') });
 
+/**
+ * AIService wraps the Google Gemini client to generate OpenAPI documentation.
+ */
 export class AIService {
   private ai: GoogleGenAI;
 
   constructor(apiKey?: string) {
     const key = apiKey || process.env.DOCUMIND_API_KEY;
     if (!key) {
-      throw new Error("❌ Gemini API Key is missing! Please provide it via -k or set DOCUMIND_API_KEY environment variable.");
+      throw new Error('❌ Gemini API Key is missing! Please provide it via -k or set DOCUMIND_API_KEY environment variable.');
     }
     this.ai = new GoogleGenAI({ apiKey: key });
   }
 
+  /**
+   * Generates documentation output for the provided source code context.
+   * @param fileContent Combined route file content and attached context.
+   * @returns A JSON string representing the generated OpenAPI payload.
+   */
   async generateDoc(fileContent: string): Promise<string> {
     const prompt = `
 You are an expert Senior Backend Engineer and a world-class OpenAPI/Swagger Architect.
@@ -51,17 +59,16 @@ Strict Instructions for High-Quality Documentation:
 
     try {
       const response = await this.ai.models.generateContent({
-        model: 'gemini-2.5-flash', 
+        model: 'gemini-2.5-flash',
         contents: [prompt, fileContent],
         config: {
-          responseMimeType: 'application/json',
+          responseMimeType: 'application/json'
         }
       });
 
       let cleanText = response.text || '{}';
-      
-      if (cleanText.includes('\`\`\`')) {
-        cleanText = cleanText.replace(/\`\`\`json/g, '').replace(/\`\`\`/g, '').trim();
+      if (cleanText.includes('```')) {
+        cleanText = cleanText.replace(/```json/g, '').replace(/```/g, '').trim();
       }
 
       return cleanText;

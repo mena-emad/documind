@@ -1,16 +1,20 @@
-import { Command } from "commander";
+import { Command } from 'commander';
 
-interface CLIOptions{
-    key?:string;
-    dir:string;
-    output:string;
-    title?:string;
-    description?:string;
-    version?:string;
+interface CLIOptions {
+    key?: string;
+    dir: string;
+    output: string;
+    title?: string;
+    description?: string;
+    version?: string;
 }
 
-export default function parseCLI():CLIOptions{
-    const program:Command = new Command()
+/**
+ * Parses and returns command-line options for DocuMind.
+ * @returns Parsed CLI options.
+ */
+export default function parseCLI(): CLIOptions {
+    const program: Command = new Command();
 
     program
     .name("documind")
